@@ -1,0 +1,120 @@
+{
+    "common": {
+        "name": "esppython",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "首次出版"
+            }
+        },
+        "title": "ESPPython",
+        "titleLang": {
+            "en": "ESPPython",
+            "de": "ESPPython",
+            "ru": "ESPPython",
+            "pt": "ESPPythonGenericName",
+            "nl": "ESPPython",
+            "fr": "ESPPython",
+            "it": "ESPPython",
+            "es": "ESPPython",
+            "pl": "ESPPython",
+            "zh-cn": "ESPPython"
+        },
+        "desc": {
+            "en": "Adapter for using the esp32 and esp8266 easily for iobroker.",
+            "de": "Adapter um den esp32 und esp8266 einfach für iobroker zu nutzen.",
+            "ru": "Адаптер для использования esp32 и esp8266 легко для iobroker.",
+            "pt": "Adaptador para usar o esp32 e esp8266 facilmente para iobroker.",
+            "nl": "Adapter om de esp32 en esp8266 eenvoudig te gebruiken voor iobroker.",
+            "fr": "Adaptateur pour utiliser facilement l'esp32 et l'esp8266 pour iobroker.",
+            "it": "Adattatore per utilizzare facilmente esp32 ed esp8266 per iobroker.",
+            "es": "Adaptador para usar el esp32 y esp8266 fácilmente para iobroker.",
+            "pl": "Adapter umożliwiający łatwe korzystanie z esp32 i esp8266 dla iobrokera.",
+            "zh-cn": "用于 iobroker 的 esp32 和 esp8266 适配器。"
+        },
+        "authors": [
+            "milo <admin@milanworld.de>"
+        ],
+        "keywords": [
+            "template"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "icon": "esppython.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/milanwb/ioBroker.esppython/master/admin/esppython.png",
+        "readme": "https://github.com/milanwb/ioBroker.esppython/blob/master/README.md",
+        "loglevel": "info",
+        "restartAdapters": [
+            "vis"
+        ],
+        "localLink": "%web_protocol%://%ip%:%web_port%/vis/edit.html",
+        "mode": "daemon",
+        "type": "iot-systems",
+        "compact": true,
+        "materialize": true,
+        "materializeTab": true,
+        "adminTab": {
+            "singleton": true,
+            "name": {
+                "en": "ESPPython",
+                "de": "ESPPython",
+                "ru": "ESPPython",
+                "pt": "ESPPythonGenericName",
+                "nl": "ESPPython",
+                "fr": "ESPPython",
+                "it": "ESPPython",
+                "es": "ESPPython",
+                "pl": "ESPPython",
+                "zh-cn": "ESPPython"
+            },
+            "link": "",
+            "fa-icon": "info"
+        },
+        "supportCustoms": true,
+        "dependencies": [
+            {
+                "js-controller": ">=1.4.2"
+            },
+            "vis"
+        ]
+    },
+    "native": {
+        "option1": true,
+        "option2": "42"
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "Device or service connected",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
+    ]
+}
